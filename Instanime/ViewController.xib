@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Instanime" customModuleProvider="target">
+            <connections>
+                <outlet property="TableView" destination="t1p-75-tGm" id="TRN-0N-Dg2"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MGD-fP-0km"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t1p-75-tGm">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NJN-sc-hgd"/>
+                        <outlet property="delegate" destination="-1" id="nlG-se-R9I"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="t1p-75-tGm" secondAttribute="bottom" id="0Wd-ur-3pH"/>
+                <constraint firstItem="t1p-75-tGm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J82-J1-8W3"/>
+                <constraint firstAttribute="trailing" secondItem="t1p-75-tGm" secondAttribute="trailing" id="QU5-fI-HFt"/>
+                <constraint firstItem="t1p-75-tGm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hkT-tg-lCn"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="75.5"/>
+        </view>
+    </objects>
+</document>

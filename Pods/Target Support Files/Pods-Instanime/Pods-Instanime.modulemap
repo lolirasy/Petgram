@@ -1,0 +1,6 @@
+framework module Pods_Instanime {
+  umbrella header "Pods-Instanime-umbrella.h"
+
+  export *
+  module * { export * }
+}
